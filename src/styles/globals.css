@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans-source);
+  --font-serif: var(--font-serif-source);
+  --font-mono: var(--font-mono-source);
+
+  --color-background: oklch(0.97 0.012 84);
+  --color-surface: oklch(0.935 0.02 82);
+  --color-surface-strong: oklch(0.9 0.03 78);
+  --color-primary: oklch(0.34 0.055 244);
+  --color-primary-soft: oklch(0.5 0.075 242);
+  --color-text: oklch(0.24 0.02 250);
+  --color-muted: oklch(0.54 0.03 248);
+  --color-border: oklch(0.84 0.016 82);
+  --color-accent: oklch(0.75 0.07 74);
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at top,
+      color-mix(in oklab, var(--color-accent) 14%, transparent),
+      transparent 30%
+    ),
+    linear-gradient(
+      180deg,
+      var(--color-background) 0%,
+      color-mix(in oklab, var(--color-surface) 35%, var(--color-background)) 100%
+    );
+  color: var(--color-text);
+  font-family: var(--font-sans-source), sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--color-primary) 22%, transparent);
+  color: var(--color-primary);
+}
+
+img {
+  display: block;
+}
