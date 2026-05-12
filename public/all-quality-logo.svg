@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 146 92" role="img" aria-labelledby="title desc">
+  <title id="title">All Quality logo</title>
+  <desc id="desc">Oval All Quality construction mark with stylized AQ initials.</desc>
+  <rect width="146" height="92" fill="#ffffff"/>
+  <path
+    d="M74 5C38.7 5 8.5 20.8 5.6 41.2 3.5 56.4 17.5 69.5 39.6 75.8h67c19.9-6.5 33.5-18.8 33.5-33.1C140.1 21.9 110.5 5 74 5Z"
+    fill="#ffffff"
+    stroke="#050505"
+    stroke-width="6"
+  />
+  <path
+    d="M24.2 50.2c9.5-16 31-28 56-31.1l9.1-12.3h16.2L66.1 58.3h18.8c.7-3 2.5-5.7 5.4-7.9 8.4-6.4 24.7-4.6 34.5 4.6 3.2 3 4.8 6 4.5 8.8-.3 2.7-2.2 5-5.5 6.8-8.8 4.7-24.5 2.2-34.4-5.8H42.1c-10.8 0-16.5-5.3-17.9-14.6Zm28.5 1.7h13.7L83.2 29.7C69.9 32.5 58.5 39 52.7 51.9Zm49.1 6.6c5.8 4.2 13.1 5.8 16.9 3.7 2.7-1.5 2.2-4.2-1.1-7.1-5.2-4.5-13.4-5.8-17.5-2.8-2.7 2-2.1 4.2 1.7 6.2Z"
+    fill="#050505"
+  />
+  <path
+    d="M5 69h136v19H5Z"
+    fill="#ffffff"
+    stroke="#050505"
+    stroke-width="4"
+  />
+  <text
+    x="73"
+    y="83.2"
+    text-anchor="middle"
+    font-family="Arial Black, Arial, Helvetica, sans-serif"
+    font-size="17"
+    font-weight="900"
+    letter-spacing=".7"
+    fill="#050505"
+  >ALL QUALITY</text>
+</svg>

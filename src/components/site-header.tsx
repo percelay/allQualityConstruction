@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface NavItem {
   href: string;
   label: string;
@@ -18,14 +20,27 @@ export function SiteHeader({
 }: SiteHeaderProps) {
   return (
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-4 sm:px-6 lg:px-8">
-        <a className="min-w-0 transition-opacity duration-300 hover:opacity-80" href="#top">
-          <p className="font-mono text-[0.65rem] uppercase tracking-[0.32em] text-muted">
-            {location}
-          </p>
-          <p className="truncate pt-1 font-serif text-xl font-semibold text-primary">
-            {brandName}
-          </p>
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:gap-6 lg:px-8">
+        <a
+          className="flex min-w-0 items-center gap-3 transition-opacity duration-300 hover:opacity-80 sm:gap-4"
+          href="#top"
+        >
+          <Image
+            alt="All Quality logo"
+            className="h-16 w-auto shrink-0 sm:h-20 lg:h-24"
+            height={92}
+            priority
+            src="/all-quality-logo.svg"
+            width={146}
+          />
+          <span className="hidden min-w-0 sm:block">
+            <span className="block font-mono text-[0.65rem] uppercase tracking-[0.32em] text-muted">
+              {location}
+            </span>
+            <span className="block truncate pt-1 font-serif text-xl font-semibold text-primary">
+              {brandName}
+            </span>
+          </span>
         </a>
         <nav className="hidden items-center gap-6 lg:flex">
           {navItems.map((item) => (
@@ -48,4 +63,3 @@ export function SiteHeader({
     </header>
   );
 }
-
